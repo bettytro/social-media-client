@@ -5,13 +5,24 @@
   "main": "index.js",
   "scripts": {
     "build": "sass src/scss:dist/css",
-    "start": "sass --watch src/scss:dist/css & live-server"
+    "start": "sass --watch src/scss:dist/css & live-server",
+    "format-check": "prettier --check 'src/**/*.{js,jsx,ts,tsx,html,css,scss,json,md}'",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "build-and-deploy": "npm run build && echo 'Git" 
   },
   "keywords": [],
   "author": "Noroff",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^8.53.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.0.1",
     "live-server": "^1.2.2",
+    "prettier": "^3.0.3",
     "sass": "^1.54.8"
   },
   "dependencies": {
