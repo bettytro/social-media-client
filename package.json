@@ -7,7 +7,7 @@
     "build": "sass src/scss:dist/css",
     "start": "sass --watch src/scss:dist/css & live-server",
     "format-check": "prettier --check 'src/**/*.{js,jsx,ts,tsx,html,css,scss,json,md}'",
-    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint": "eslint src/**/**/*.{js,jsx,ts,tsx}",
     "build-and-deploy": "npm run build && echo 'Git" 
   },
   "keywords": [],
