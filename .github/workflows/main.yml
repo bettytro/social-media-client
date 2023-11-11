@@ -3,7 +3,7 @@ name: Install dependencies, run Prettier and EsLint + build & deploy on merge ma
 on:
   push:
     branches:
-      - testing-merge
+      - main
 
 jobs:
   lint-and-format:
